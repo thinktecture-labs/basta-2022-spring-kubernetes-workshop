@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: fire-and-forget
+spec:
+  schedule: "*/15 * * * 1-5"
+  jobTemplate:
+    metadata:
+      labels:
+        component: job
+    containers:
+    - name: job
+      image: basta2022ws.azurecr.io/job:0.0.1
+    restartPolicy: Never

@@ -19,6 +19,7 @@ Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 - [Kubectl Cheat-Sheet](https://github.com/dennyzhang/cheatsheet-kubernetes-A4)
 - [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/)
 - [Helm Package Manager](https://helm.sh)
+- [kubectl Plugins with Krew](https://krew.sigs.k8s.io/plugins/)
 
 ## Contact
 
