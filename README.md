@@ -1,6 +1,7 @@
 # BASTA! Spring 2022 Kubernetes Workshop
 
 Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
+
 ## Playbook
 
 1. 08:30 - 10:00: Introduction / creating and connecting to a Kubernetes cluster
@@ -10,6 +11,9 @@ Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 
 ## Links
 
+- [KIND](https://kind.sigs.k8s.io/docs/user/quick-start/)
+- Burst Mode in Kubernetes with cloud engines -> https://virtual-kubelet.io/
+- [Kubernetes Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
 ## Contact
 
 Thorsten Hans: [✉️](mailto:thorsten.hans@thinktecture.com) [🐦](https://twitter.com/ThorstenHans)

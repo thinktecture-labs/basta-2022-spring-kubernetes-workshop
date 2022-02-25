@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "IaonYEN2cv62MXmbLbwqkm0bwp7mbTcSv03xkRmSEUSJl/Nfll4onqry7sU65dSx0TPFfANgzI67u+eAT9Ukxg==",
+  "success": true,
+  "projectFilePath": "/Users/thorsten/dev/thinktecture/samples/basta-spring-2022-kubernetes-workshop/src/basta-api/BASTA.Kubernetes.csproj",
+  "expectedPackageFiles": [
+    "/Users/thorsten/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/thorsten/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/thorsten/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/thorsten/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/thorsten/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/thorsten/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
