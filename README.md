@@ -1,5 +1,6 @@
 # BASTA! Spring 2022 Kubernetes Workshop
 
+Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 ## Playbook
 
 1. 08:30 - 10:00: Introduction / creating and connecting to a Kubernetes cluster
