@@ -1,22 +1,56 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: api
 spec:
+  replicas: 2
   selector:
     matchLabels:
-      app: myapp
+      component: api
+      conference: basta
+      location: frankfurt
   template:
     metadata:
+      name: api
+      namespace: live
       labels:
-        app: myapp
+        component: api
+        conference: basta
+        location: frankfurt
     spec:
+      # init container are really helpful when you have to enforce a chronological order with things like EF Migrations
+      # initContainers:
       containers:
-      - name: myapp
-        image: <Image>
+      - name: main
+        image: basta2022ws.azurecr.io/api:0.0.5
+        envFrom:
+          - configMapRef:
+              # non existing ConfigMap (actually does not matter because it is optionally)
+              name: full-config
+              optional: true
+        env:
+          - name: ASPNETCORE_ENVIRONMENT
+            valueFrom:
+              configMapKeyRef:
+                name: basta
+                key: environment
+        readinessProbe:
+          initialDelaySeconds: 3
+          httpGet:
+            port: 5000
+            path: "/healthz/readiness"
+        livenessProbe:
+          initialDelaySeconds: 15
+          periodSeconds: 20
+          httpGet:
+            port: 5000
+            path: "/healthz/liveness"
         resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
           limits:
             memory: "128Mi"
-            cpu: "500m"
+            cpu: "100m"
         ports:
-        - containerPort: <Port>
+          - containerPort: 5000

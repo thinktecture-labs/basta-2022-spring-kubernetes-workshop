@@ -14,6 +14,9 @@ Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 - [KIND](https://kind.sigs.k8s.io/docs/user/quick-start/)
 - Burst Mode in Kubernetes with cloud engines -> https://virtual-kubelet.io/
 - [Kubernetes Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
+- [Hey Load Generator](https://github.com/rakyll/hey)
+- [KEDA - Kubernetes EventDriven Architectures](https://keda.sh/)
+- [Kubectl Cheatsheet](https://github.com/dennyzhang/cheatsheet-kubernetes-A4)
 ## Contact
 
 Thorsten Hans: [✉️](mailto:thorsten.hans@thinktecture.com) [🐦](https://twitter.com/ThorstenHans)

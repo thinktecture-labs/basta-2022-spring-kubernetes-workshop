@@ -8,14 +8,14 @@ namespace BASTA.Kubernetes.Controllers {
     {
 
         [HttpGet]
-        [Route("/readiness")]
+        [Route("readiness")]
         public IActionResult IsReady() 
         {
             return Ok(new { HostName = System.Net.Dns.GetHostName()});
         }
 
         [HttpGet]
-        [Route("/livenesss")]
+        [Route("liveness")]
         public IActionResult IsAlive()
         {
                 return Ok(new { HostName = System.Net.Dns.GetHostName()});

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp
+  name: api
   namespace: live
   labels:
     component: api
@@ -9,11 +9,25 @@ metadata:
     location: frankfurt
 spec:
   containers:
-  - name: myapp
-    image: <Image>
+  - name: main
+    image: basta2022ws.azurecr.io/api:0.0.3
+    readinessProbe:
+      initialDelaySeconds: 3
+      httpGet:
+        port: 5000
+        path: "/healthz/readiness"
+    livenessProbe:
+      initialDelaySeconds: 15
+      periodSeconds: 20
+      httpGet:
+        port: 5000
+        path: "/healthz/liveness"
     resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
       limits:
         memory: "128Mi"
-        cpu: "500m"
+        cpu: "100m"
     ports:
-      - containerPort: <Port>
+      - containerPort: 5000
