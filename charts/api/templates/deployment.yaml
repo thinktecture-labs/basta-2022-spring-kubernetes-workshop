@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "api.fullname" . }}
+  labels:
+    {{- include "api.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "api.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "api.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: {{ .Values.container.image.name }}:{{ .Values.container.image.tag | default .Chart.AppVersion }}
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              valueFrom:
+                configMapKeyRef:
+                  name: basta
+                  key: environment
+          ports:
+            - name: http
+              containerPort: {{ .Values.container.port }}
+              protocol: TCP
+          livenessProbe:
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            httpGet:
+              path: /healthz/liveness
+              port: http
+          readinessProbe:
+            initialDelaySeconds: 3
+            httpGet:
+              path: /healthz/readiness
+              port: http
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "100m"

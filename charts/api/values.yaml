@@ -1,0 +1,14 @@
+environment: Development
+container:
+  image:
+    name: basta2022ws.azurecr.io/api
+    tag: 0.0.5
+  port: 5000
+service:
+  port: 8080
+ingress:
+  prefix: api2
+hpa:
+  utilization: 70
+  min: 2
+  max: 5

@@ -4,7 +4,7 @@ metadata:
   name: api
   # FQDN Scheme: {ServiceName}.{NamespaceName}.svc.cluster.local
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     component: api
     conference: basta

@@ -16,7 +16,10 @@ Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 - [Kubernetes Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
 - [Hey Load Generator](https://github.com/rakyll/hey)
 - [KEDA - Kubernetes EventDriven Architectures](https://keda.sh/)
-- [Kubectl Cheatsheet](https://github.com/dennyzhang/cheatsheet-kubernetes-A4)
+- [Kubectl Cheat-Sheet](https://github.com/dennyzhang/cheatsheet-kubernetes-A4)
+- [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/)
+- [Helm Package Manager](https://helm.sh)
+
 ## Contact
 
 Thorsten Hans: [✉️](mailto:thorsten.hans@thinktecture.com) [🐦](https://twitter.com/ThorstenHans)
