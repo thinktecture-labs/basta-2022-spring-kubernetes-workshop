@@ -21,15 +21,15 @@ Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 - [Helm Package Manager](https://helm.sh)
 - [kubectl Plugins with Krew](https://krew.sigs.k8s.io/plugins/)
 - [DAPR (Distributed Application Runtime)](https://dapr.io/)
-- [Vergleich von Service Meshes](https://servicemesh.es/)
+- [Service Mesh comparison](https://servicemesh.es/)
 - [Service Mesh Interface Specification (SMI Spec)](https://smi-spec.io/)
 - [cert-manager](https://cert-manager.io/)
 - [Configure AKS Prometheus Scraping](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-integration#applying-updated-configmap)
 - [external-dns](https://github.com/kubernetes-sigs/external-dns)
-- [Blog Post on AKS and external-dns](https://www.thorsten-hans.com/external-dns-azure-kubernetes-service-azure-dns/)
+- [Blog post on AKS and external-dns](https://www.thorsten-hans.com/external-dns-azure-kubernetes-service-azure-dns/)
 - [Debugging Apps in Kubernetes with Bridge to Kubernetes](https://www.thorsten-hans.com/debugging-apps-in-kubernetes-with-bridge/)
 
-## VSCode Extensions used during the Workshop
+## VSCode Extensions used during the workshop
 
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
@@ -41,7 +41,8 @@ Link to the repository: [https://bit.ly/b2022repo](https://bit.ly/b2022repo)
 
 - [cTop](https://github.com/bcicen/ctop)
 - [Lens - The Kubernetes IDE](https://k8slens.dev/)
-# kubectl commands
+
+## Commands used during the workshop
 
 ```bash
 # list namespaces
